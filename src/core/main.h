@@ -1,4 +1,7 @@
+#include "window.h"
+
 class Root{
+    Window window;
     bool running;
     private:
         void events();

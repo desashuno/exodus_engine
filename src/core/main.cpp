@@ -1,9 +1,8 @@
-#include<iostream>
-
 #include "main.h"
 
+
 void Root::events(){
-    
+    ;
 }
 
 void Root::update(){
@@ -11,16 +10,19 @@ void Root::update(){
 }
 
 void Root::render(){
-    std::cout << "hello word" << std::endl;
+    ;
 }
 
 void Root::init(){
-    running = true;
+    Window window = Window("Common window", 1280, 720);
+    window.init();
+    window.run();
+    running = true;/*
     while (running == true){
         events();
         update();
         render();
-    }
+    }*/
 }
 
 
