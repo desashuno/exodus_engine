@@ -1,0 +1,6 @@
+set(ROOT_SRC
+    "${CMAKE_CURRENT_SOURCE_DIR}/core/main.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/core/main.cpp"
+)
+
+add_executable(root ${ROOT_SRC})
