@@ -1,5 +1,3 @@
-cmake_minimum_required(VERSION 3.16.0)
-
 find_package( OpenGL REQUIRED )
 
 include_directories( ${OPENGL_INCLUDE_DIRS} )
@@ -28,6 +26,3 @@ if( MSVC )
         set_property( DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT GLFW-CMake-starter )
     endif()
 endif()
-
-add_subdirectory(src)
-
